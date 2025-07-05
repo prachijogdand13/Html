@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* # is for id */
+        /* Id selector */
+        #Firstpara{
+           color: palevioletred;
+           border: 2px solid red;
+        }
+        /* . is for class */
+        /* Class selector */
+        .bgblue{
+            background-color: blue;
+        }
+        /* Groupin selector */
+        footer, span{
+            background-color: pink;
+
+        }
+        /* if p  is contained by any li which is contained by div */
+        div li p{
+            color: yellow;
+            background-color: green;
+            border: 2px solid black;
+        }
+        /* if p is right inside div then css will be applied */
+        div > p{
+            color: rgb(12, 189, 83);
+            background-color: rgb(197, 244, 197);
+            font-weight: bold;
+        }
+        div + p{
+            color: rgb(12, 12, 12);
+            background-color: rgb(245, 249, 142);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+    <body>  
+    <p id="Firstpara">This is simple paragraph to demonstrate css selectors</p>
+    <p id="Secondpara" class="redElement bgblue">This is another simple paragraph to demonstrate css selectors</p>
+    <div>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, necessitatibus?</p>
+            </li>
+            <p>This is yet another simple paragraph inside div to demonstrate css selectors</p>
+            <span>This is span</span>
+    </div>
+    <p>This paragraph is after div to demonstrate css selectors</p>
+    <footer>This is footer</footer>
+</body>
+</html>
