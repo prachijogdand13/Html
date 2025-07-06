@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        body{
+            background-color: #e6cbf8;
+        }
+        .container{
+            background-color: rgb(231,230,241);
+            border: 3px solid rgb(64, 6, 119);
+            /* we can set margin or padding for left,right,top,bottom like this
+            padding-top: 79px;
+            padding-bottom: 79;
+            padding-left: 34px;
+            padding-right: 79px;*/
+            /* we set one margin or padding value for all side
+             padding: 20px; */
+
+            /*padding: 23px,56px,76px,67px; set different padding value for all side*/
+            /* padding: y(top/bottom) x(left/right) when you want to set same value for top and bottom & left and right.*/
+            padding: 34px 19px;
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 533px;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+             Magni ducimus incidunt blanditiis exercitationem odio quis, at cum laboriosam voluptatem rem cumque
+              praesentium voluptas error provident. Doloremque excepturi ab facere qui!</p>
+     </div>
+     <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+             Magni ducimus incidunt blanditiis exercitationem odio quis, at cum laboriosam voluptatem rem cumque
+              praesentium voluptas error provident. Doloremque excepturi ab facere qui!</p>
+     </div>
+     <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+             Magni ducimus incidunt blanditiis exercitationem odio quis, at cum laboriosam voluptatem rem cumque
+              praesentium voluptas error provident. Doloremque excepturi ab facere qui!</p>
+     </div>
+</body>
+</html>
