@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors & more designing</title>
+    <style>
+        .container{
+            border: 2px solid rgb(205, 137, 222);
+            background-color: hsl(144, 97%, 86%);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: whitesmoke;
+            background-color: salmon;
+        }
+        /* when the link is visible then it will apply
+        a:visited{
+            background-color: lightskyblue;
+        }
+        a:active{
+            background-color: lightseagreen;
+        }*/
+        .btn{
+            background-color: rgb(202, 85, 108);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            /* font-weight: bold; */
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            color: whitesmoke;
+            background-color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+          <h3>This is my heading</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum dolorum, quia iure sed 
+            voluptatibus iusto ipsum doloribus quibusdam natus nostrum, quos amet fugiat laudantium maxime
+             praesentium animi minus sint aut?</p>
+             <a href="https://google.com" class="btn">Read More</a>
+             <button class="btn">Contact Us</button>
+    </div>
+</body>
+</html>
